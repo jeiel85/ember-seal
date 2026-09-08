@@ -1,0 +1,28 @@
+{
+	"id": "b_act3a",
+	"name": "재의 기사",
+	"bgm": "battle",
+	"tilemap": { ".": "grass", "t": "tree", "f": "flowers", "g": "reeds", "r": "rock", "w": "water", "d": "dfloor", "x": "dwall", "a": "ashen", "c": "crack", "s": "sand" },
+	"blocked": "trwx c",
+	"tiles": [
+		"############",
+		"#aaaaaaaaaa#",
+		"#aa..aa..aa#",
+		"#aaaaaaaaaa#",
+		"#aaaacaaaaa#",
+		"#aaaaaaaaaa#",
+		"#aa..aa..aa#",
+		"#aaaaaaaaaa#",
+		"#aaaaaaaaaa#",
+		"############"
+	],
+	"player_spawns": [[2, 4], [3, 5], [2, 5], [3, 4]],
+	"enemies": [
+		{ "enemy": "knight", "x": 9, "y": 3 },
+		{ "enemy": "knight", "x": 9, "y": 6 }
+	],
+	"objective": "defeat_all",
+	"intro": { "speaker": "", "lines": [ "재의 기사가 검을 들어 막아선다!" ] },
+	"outro": { "speaker": "", "lines": [] },
+	"on_win": []
+}

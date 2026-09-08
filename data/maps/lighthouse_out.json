@@ -1,0 +1,53 @@
+{
+	"id": "lighthouse_out",
+	"name": "잿불 등대 외곽",
+	"bgm": "lighthouse",
+	"tilemap": { "#": "cliff", ".": "ashen", ",": "path", "t": "tree", "f": "flowers", "g": "reeds", "w": "water", "b": "bridge", "r": "rock", "R": "roof", "W": "wall", "D": "door", "N": "window", "d": "dfloor", "x": "dwall", "c": "crack", "a": "ashen", "L": "lighthouse" },
+	"blocked": "#twrRWNDxcL",
+	"tiles": [
+		"############,,##########",
+		"#...........,,.........#",
+		"#.....c.....,,....c....#",
+		"#...........,,.........#",
+		"#...c........,,....c...#",
+		"#............,,........#",
+		"#.....c......,,........#",
+		"#............,,....c...#",
+		"#....c.......,,........#",
+		"#............,,........#",
+		"#......c.....,,....c...#",
+		"#............,,........#",
+		"#............,,........#",
+		"#............,,........#",
+		"############,,##########",
+		"########################"
+	],
+	"player_start": { "x": 12, "y": 12 },
+	"npcs": [],
+	"exits": [
+		{ "x": 12, "y": 14, "to": "village1", "tx": 10, "ty": 1 },
+		{ "x": 13, "y": 14, "to": "village1", "tx": 10, "ty": 1 },
+		{ "x": 12, "y": 0, "to": "lighthouse_top", "tx": 7, "ty": 9 },
+		{ "x": 13, "y": 0, "to": "lighthouse_top", "tx": 8, "ty": 9 }
+	],
+	"chests": [
+		{ "x": 20, "y": 3, "item": "a_ash_mantle", "count": 1 }
+	],
+	"field_enemies": [
+		{ "x": 12, "y": 8, "enemy": "knight", "battle": "b_act3a" },
+		{ "x": 17, "y": 7, "enemy": "knight", "battle": "b_act3b" }
+	],
+	"events": [
+		{
+			"id": "arrive",
+			"trigger": "auto",
+			"cond": { "stage_min": 7, "stage_max": 7 },
+			"actions": [
+				{ "type": "act_title", "text": "제3장 · 잿불의 등대" },
+				{ "type": "dialog", "speaker": "카일", "lines": [ "땅이 타들어 가고 있어. 여기가 봉인의 심장이군." ] },
+				{ "type": "dialog", "speaker": "아이리", "lines": [ "등대 꼭대기의 화로에 닿기 전에… 힘을 아껴야 해요." ] },
+				{ "type": "set_objective", "text": "등대 정상으로 올라가라" }
+			]
+		}
+	]
+}

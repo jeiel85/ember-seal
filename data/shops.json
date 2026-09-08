@@ -1,0 +1,17 @@
+{
+	"v1_smith": {
+		"name": "대장간",
+		"greeting": "쇠붙이 보고 가라. 다 좋은 물건이야.",
+		"stock": ["a_leather_vest", "w_old_sword", "potion"]
+	},
+	"v1_store": {
+		"name": "잿불 잡화점",
+		"greeting": "여행 준비는 됐나? 없는 건 없어.",
+		"stock": ["potion", "antidote", "bomb"]
+	},
+	"v2_shop": {
+		"name": "여울 약국",
+		"greeting": "강가의 약초로 지은 약이야. 하나 가져가게.",
+		"stock": ["hi_potion", "antidote", "bomb", "a_chain_mail", "w_hawk_bow"]
+	}
+}

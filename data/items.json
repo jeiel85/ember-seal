@@ -1,0 +1,63 @@
+{
+	"potion": {
+		"name": "회복약",
+		"kind": "heal",
+		"power": 18,
+		"price": 25,
+		"icon": "potion",
+		"desc": "HP를 18 회복한다."
+	},
+	"hi_potion": {
+		"name": "고급 회복약",
+		"kind": "heal",
+		"power": 45,
+		"price": 70,
+		"icon": "hi_potion",
+		"desc": "HP를 45 회복한다."
+	},
+	"antidote": {
+		"name": "해독초",
+		"kind": "cure",
+		"price": 15,
+		"icon": "antidote",
+		"desc": "독 상태를 치료한다."
+	},
+	"revive": {
+		"name": "부활 깃털",
+		"kind": "revive",
+		"power": 0.5,
+		"price": 120,
+		"icon": "revive",
+		"desc": "쓰러진 아군을 최대 HP 절반으로 일으킨다."
+	},
+	"bomb": {
+		"name": "부싯돌 폭탄",
+		"kind": "damage",
+		"power": 14,
+		"range": 3,
+		"price": 40,
+		"icon": "bomb",
+		"desc": "적 하나에게 고정 피해 14. 사거리 3."
+	},
+	"moon_herb": {
+		"name": "달빛 약초",
+		"kind": "quest",
+		"price": 0,
+		"icon": "herb",
+		"desc": "달빛 아래에서만 피는 약초. 약재로 쓰인다."
+	},
+	"lost_earring": {
+		"name": "잃어버린 귀걸이",
+		"kind": "quest",
+		"price": 0,
+		"icon": "charm",
+		"desc": "여울마을 아낙이 잃어버린 은귀걸이."
+	},
+	"old_lantern": {
+		"name": "오랜 등불",
+		"kind": "quest",
+		"price": 0,
+		"icon": "charm",
+		"desc": "등대 지기의 유물. 오래된 불씨가 아직 살아 있다."
+	}
+}

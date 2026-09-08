@@ -1,0 +1,29 @@
+{
+	"id": "b_dungeon_a",
+	"name": "갱도의 박쥐",
+	"bgm": "battle",
+	"tilemap": { ".": "grass", "t": "tree", "f": "flowers", "g": "reeds", "r": "rock", "w": "water", "d": "dfloor", "x": "dwall", "a": "ashen", "c": "crack", "s": "sand" },
+	"blocked": "trwx c",
+	"tiles": [
+		"############",
+		"#xxxxxxxxxx#",
+		"#dddddddddd#",
+		"#dddddddddd#",
+		"#ddddxxdddd#",
+		"#ddddxxdddd#",
+		"#dddddddddd#",
+		"#dddddddddd#",
+		"#dddddddddd#",
+		"############"
+	],
+	"player_spawns": [[2, 4], [3, 5], [2, 5], [3, 4]],
+	"enemies": [
+		{ "enemy": "bat", "x": 9, "y": 2 },
+		{ "enemy": "bat", "x": 9, "y": 7 },
+		{ "enemy": "scorpion", "x": 6, "y": 4 }
+	],
+	"objective": "defeat_all",
+	"intro": { "speaker": "", "lines": [ "갱도 천장에서 박쥐 떼가 날아내린다!" ] },
+	"outro": { "speaker": "", "lines": [] },
+	"on_win": []
+}

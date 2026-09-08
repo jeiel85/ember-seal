@@ -1,0 +1,14 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Build output
+build/
+
+# Temporary screenshot output
+shots/
+
+# System
+*.tmp
+.DS_Store
+Thumbs.db

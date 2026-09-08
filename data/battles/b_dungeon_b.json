@@ -1,0 +1,28 @@
+{
+	"id": "b_dungeon_b",
+	"name": "어둠 속의 날갯소리",
+	"bgm": "battle",
+	"tilemap": { ".": "grass", "t": "tree", "f": "flowers", "g": "reeds", "r": "rock", "w": "water", "d": "dfloor", "x": "dwall", "a": "ashen", "c": "crack", "s": "sand" },
+	"blocked": "trwx c",
+	"tiles": [
+		"############",
+		"#xxxxxxxxxx#",
+		"#dddddddddd#",
+		"#dddddddddd#",
+		"#ddddxxdddd#",
+		"#ddddxxdddd#",
+		"#dddddddddd#",
+		"#dddddddddd#",
+		"#dddddddddd#",
+		"############"
+	],
+	"player_spawns": [[2, 4], [3, 5], [2, 5], [3, 4]],
+	"enemies": [
+		{ "enemy": "bat", "x": 9, "y": 2 },
+		{ "enemy": "bat", "x": 9, "y": 7 }
+	],
+	"objective": "defeat_all",
+	"intro": { "speaker": "", "lines": [ "어둠 속에서 날갯소리가 다가온다!" ] },
+	"outro": { "speaker": "", "lines": [] },
+	"on_win": []
+}

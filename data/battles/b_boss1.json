@@ -1,0 +1,37 @@
+{
+	"id": "b_boss1",
+	"name": "흙 파수꾼",
+	"bgm": "boss",
+	"tilemap": { ".": "grass", "t": "tree", "f": "flowers", "g": "reeds", "r": "rock", "w": "water", "d": "dfloor", "x": "dwall", "a": "ashen", "c": "crack", "s": "sand" },
+	"blocked": "trwx c",
+	"tiles": [
+		"############",
+		"#..........#",
+		"#..t..r..t.#",
+		"#..........#",
+		"#....r.....#",
+		"#..........#",
+		"#..t..r..t.#",
+		"#..........#",
+		"#....g.....#",
+		"############"
+	],
+	"player_spawns": [[2, 4], [3, 5], [2, 5], [3, 4]],
+	"enemies": [
+		{ "enemy": "golem", "x": 9, "y": 4 }
+	],
+	"objective": "boss",
+	"intro": { "speaker": "세라", "lines": [ "앞이 막혀 있어… 저거, 뭐야?", "흙이… 스스로 일어서고 있어!" ] },
+	"outro": { "speaker": "", "lines": [] },
+	"on_win": [
+		{ "type": "dialog", "speaker": "세라", "lines": [ "이런… 이런 게 벌판에 있었다니.", "……룬, 저기 봐. 바위 밑에 뭔가 있어." ] },
+		{ "type": "give_item", "item": "old_lantern", "count": 1 },
+		{ "type": "dialog", "speaker": "세라", "lines": [
+			"아버지의 등불… 그리고 편지가 있어.",
+			"「여울마을의 아이리에게. 봉인에 균열이 갔다. 등대의 불만으로는 못 버틴다. 골짜기의 순환을 끝내는 방법을 그녀는 안다.」",
+			"아버지… 어디에 있는 거야."
+		] },
+		{ "type": "set_objective", "text": "잿불마을로 돌아가 장로에게 보고하라" },
+		{ "type": "set_stage", "value": 3 }
+	]
+}

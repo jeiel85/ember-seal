@@ -1,0 +1,27 @@
+{
+	"id": "b_midboss",
+	"name": "심연의 사도",
+	"bgm": "boss",
+	"tilemap": { ".": "grass", "t": "tree", "f": "flowers", "g": "reeds", "r": "rock", "w": "water", "d": "dfloor", "x": "dwall", "a": "ashen", "c": "crack", "s": "sand" },
+	"blocked": "trwx c",
+	"tiles": [
+		"############",
+		"#xxxxxxxxxx#",
+		"#dddddddddd#",
+		"#dddddddddd#",
+		"#ddddddcddd#",
+		"#ddddddcddd#",
+		"#dddddddddd#",
+		"#dddddddddd#",
+		"#dddddddddd#",
+		"############"
+	],
+	"player_spawns": [[2, 4], [3, 5], [2, 5], [3, 4]],
+	"enemies": [
+		{ "enemy": "apostle", "x": 9, "y": 4 }
+	],
+	"objective": "boss",
+	"intro": { "speaker": "", "lines": [ "심연의 사도가 어둠을 두르고 떠오른다!" ] },
+	"outro": { "speaker": "", "lines": [] },
+	"on_win": []
+}

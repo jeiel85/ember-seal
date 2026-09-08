@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect width="128" height="128" fill="#1a1420"/>
+  <rect x="16" y="16" width="96" height="96" fill="#2b2233"/>
+  <!-- lighthouse -->
+  <rect x="56" y="34" width="16" height="52" fill="#8a8a96"/>
+  <rect x="56" y="34" width="6" height="52" fill="#a8a8b4"/>
+  <rect x="52" y="30" width="24" height="6" fill="#6b6b78"/>
+  <rect x="54" y="24" width="20" height="8" fill="#3a3a46"/>
+  <!-- ember flame -->
+  <rect x="58" y="14" width="12" height="10" fill="#ff9a3c"/>
+  <rect x="60" y="10" width="8" height="6" fill="#ffc857"/>
+  <rect x="62" y="8" width="4" height="4" fill="#fff3b0"/>
+  <!-- seal ring -->
+  <rect x="40" y="86" width="48" height="8" fill="#c96b3c"/>
+  <rect x="44" y="94" width="40" height="6" fill="#8a4a2c"/>
+  <rect x="60" y="100" width="8" height="10" fill="#c96b3c"/>
+  <!-- ground -->
+  <rect x="24" y="110" width="80" height="6" fill="#4a3b52"/>
+</svg>

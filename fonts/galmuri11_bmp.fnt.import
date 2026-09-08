@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://7bsawv4mfl7j"
+path="res://.godot/imported/galmuri11_bmp.fnt-411236a1b8e89571778201da4119a31d.fontdata"
+
+[deps]
+
+source_file="res://fonts/galmuri11_bmp.fnt"
+dest_files=["res://.godot/imported/galmuri11_bmp.fnt-411236a1b8e89571778201da4119a31d.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

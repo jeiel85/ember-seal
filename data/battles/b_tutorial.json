@@ -1,0 +1,26 @@
+{
+	"id": "b_tutorial",
+	"name": "재더미의 그림자",
+	"bgm": "battle",
+	"tilemap": { ".": "grass", "t": "tree", "f": "flowers", "g": "reeds", "r": "rock", "w": "water", "d": "dfloor", "x": "dwall", "a": "ashen", "c": "crack", "s": "sand" },
+	"blocked": "trwx c",
+	"tiles": [
+		"##########",
+		"#........#",
+		"#..t...t.#",
+		"#........#",
+		"#........#",
+		"#..t...t.#",
+		"#........#",
+		"##########"
+	],
+	"player_spawns": [[2, 4]],
+	"enemies": [
+		{ "enemy": "sprout", "x": 7, "y": 2 },
+		{ "enemy": "sprout", "x": 7, "y": 5 }
+	],
+	"objective": "defeat_all",
+	"intro": { "speaker": "", "lines": [ "재식물이 이쪽을 향해 몰려온다!" ] },
+	"outro": { "speaker": "", "lines": [] },
+	"on_win": []
+}

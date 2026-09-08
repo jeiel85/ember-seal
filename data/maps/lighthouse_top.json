@@ -1,0 +1,52 @@
+{
+	"id": "lighthouse_top",
+	"name": "등대 정상",
+	"bgm": "lighthouse",
+	"tilemap": { "#": "cliff", ".": "ashen", ",": "path", "t": "tree", "f": "flowers", "g": "reeds", "w": "water", "b": "bridge", "r": "rock", "R": "roof", "W": "wall", "D": "door", "N": "window", "d": "dfloor", "x": "dwall", "c": "crack", "a": "ashen", "L": "lighthouse" },
+	"blocked": "#twrRWNDxcL",
+	"tiles": [
+		"################",
+		"#..............#",
+		"#....LLLLLL....#",
+		"#....LWWWWL....#",
+		"#....LLLLLL....#",
+		"#..............#",
+		"#..............#",
+		"#..............#",
+		"#..............#",
+		"#..............#",
+		"#######,,#######",
+		"################"
+	],
+	"player_start": { "x": 7, "y": 9 },
+	"npcs": [],
+	"exits": [
+		{ "x": 7, "y": 10, "to": "lighthouse_out", "tx": 12, "ty": 1 },
+		{ "x": 8, "y": 10, "to": "lighthouse_out", "tx": 13, "ty": 1 }
+	],
+	"chests": [],
+	"field_enemies": [],
+	"events": [
+		{
+			"id": "final",
+			"trigger": "step",
+			"tiles": [[7, 6], [8, 6]],
+			"cond": { "stage_min": 7 },
+			"actions": [
+				{ "type": "dialog", "speaker": "세라", "lines": [ "……아버지…!" ] },
+				{ "type": "dialog", "speaker": "세이른", "lines": [
+					"…세라… 미안하다. 봉화를… 지키려 했는데…",
+					"군주는… 화로 아래에서… 깨어나고 있다…",
+					"잿불검을… 화로에… 순환을… 끝내다오…"
+				] },
+				{ "type": "dialog", "speaker": "세라", "lines": [ "아버지…! 아버지…!" ] },
+				{ "type": "sfx", "id": "roar" },
+				{ "type": "dialog", "speaker": "재의 군주", "lines": [ "……백 년… 굶주린… 이 몸의… 양식이… 왔군…" ] },
+				{ "type": "dialog", "speaker": "룬", "lines": [ "너를 달래는 일은 끝난다. 할아버지, 그리고 모든 불지기들 — 지켜봐 줘." ] },
+				{ "type": "battle", "battle": "b_final" },
+				{ "type": "dialog", "speaker": "룬", "lines": [ "이제 끝낸다." ] },
+				{ "type": "ending" }
+			]
+		}
+	]
+}

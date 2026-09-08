@@ -1,0 +1,27 @@
+{
+	"id": "b_final",
+	"name": "재의 군주",
+	"bgm": "boss",
+	"tilemap": { ".": "grass", "t": "tree", "f": "flowers", "g": "reeds", "r": "rock", "w": "water", "d": "dfloor", "x": "dwall", "a": "ashen", "c": "crack", "s": "sand" },
+	"blocked": "trwx c",
+	"tiles": [
+		"##############",
+		"#aaaaaaaaaaaa#",
+		"#aa..aa..aaaa#",
+		"#aaaaaaaaaaaa#",
+		"#aaaaacaaaaaa#",
+		"#aaaaacaaaaaa#",
+		"#aaaaaaaaaaaa#",
+		"#aa..aa..aaaa#",
+		"#aaaaaaaaaaaa#",
+		"##############"
+	],
+	"player_spawns": [[2, 4], [2, 5], [3, 4], [3, 5]],
+	"enemies": [
+		{ "enemy": "ashlord", "x": 10, "y": 4 }
+	],
+	"objective": "boss",
+	"intro": { "speaker": "", "lines": [ "재의 군주가 등대의 불빛을 삼키며 일어선다!" ] },
+	"outro": { "speaker": "", "lines": [] },
+	"on_win": []
+}

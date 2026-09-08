@@ -1,0 +1,59 @@
+{
+	"id": "field1",
+	"name": "재밭 벌판",
+	"bgm": "field",
+	"tilemap": { "#": "cliff", ".": "grass", ",": "path", "t": "tree", "f": "flowers", "g": "reeds", "w": "water", "b": "bridge", "r": "rock", "R": "roof", "W": "wall", "D": "door", "N": "window", "d": "dfloor", "x": "dwall", "c": "crack", "a": "ashen", "L": "lighthouse" },
+	"blocked": "#twrRWNDxcL",
+	"tiles": [
+		"############,,############",
+		"#....t......,,....t......#",
+		"#..t..t.....,,....t...t..#",
+		"#...........,,...........#",
+		"#......................t.#",
+		"#....t......,,...........#",
+		"#...........,,......t....#",
+		"#...t.......,,...........#",
+		"#...........,,....t......#",
+		"#....g......,,...........#",
+		"#...gg.....,,......g.....#",
+		"#....g.....,,.....gg.....#",
+		"#..........,,......g.....#",
+		"#..t.......,,............#",
+		"#..t.......,,....t.......#",
+		"#..........,,............#",
+		"############,,############",
+		"##########################"
+	],
+	"player_start": { "x": 12, "y": 14 },
+	"npcs": [],
+	"exits": [
+		{ "x": 12, "y": 16, "to": "village1", "tx": 10, "ty": 14 },
+		{ "x": 13, "y": 16, "to": "village1", "tx": 10, "ty": 14 },
+		{ "x": 12, "y": 0, "to": "field2", "tx": 12, "ty": 15, "cond": { "stage_min": 4 }, "locked_lines": [ "북쪽 숲길. 굵은 가시덤불이 길을 막고 있다.", "등대 쪽 일을 마친 뒤에 건널 수 있을 것 같다." ] },
+		{ "x": 13, "y": 0, "to": "field2", "tx": 13, "ty": 15, "cond": { "stage_min": 4 }, "locked_lines": [ "북쪽 숲길. 굵은 가시덤불이 길을 막고 있다.", "등대 쪽 일을 마친 뒤에 건널 수 있을 것 같다." ] },
+		{ "x": 24, "y": 8, "to": "field2", "tx": 1, "ty": 8 }
+	],
+	"chests": [
+		{ "x": 24, "y": 4, "item": "potion", "count": 2 }
+	],
+	"field_enemies": [
+		{ "x": 12, "y": 8, "enemy": "sprout", "battle": "b_field1a" },
+		{ "x": 12, "y": 3, "enemy": "golem", "battle": "b_boss1", "cond": { "stage_min": 2, "stage_max": 2 } }
+	],
+	"events": [
+		{
+			"id": "sera_join",
+			"trigger": "auto",
+			"cond": { "stage_min": 1, "stage_max": 1 },
+			"actions": [
+				{ "type": "dialog", "speaker": "세라", "lines": [ "잠깐! 룬,지?", "나는 세라. 등대 지기 세이른의 딸이야.", "아버지가 등대에 있었을 거야. 나도 갈게. 활은 내가 제일 잘 쓰니까." ] },
+				{ "type": "join", "char": "sera", "level": 2 },
+				{ "type": "dialog", "speaker": "세라", "lines": [ "……저기, 재더미 쪽에서 뭔가 움직였어!", "조심해!" ] },
+				{ "type": "battle", "battle": "b_tutorial" },
+				{ "type": "dialog", "speaker": "세라", "lines": [ "괜찮아? 이것들은… 식물이었을 텐데.", "재에 뒤덮여서 마수처럼 변한 것 같아." ] },
+				{ "type": "set_objective", "text": "벌판 북쪽으로 나아가라" },
+				{ "type": "set_stage", "value": 2 }
+			]
+		}
+	]
+}

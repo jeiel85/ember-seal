@@ -1,0 +1,38 @@
+{
+	"rune": {
+		"name": "룬",
+		"role": "검사",
+		"base": { "hp": 30, "atk": 8, "def": 5, "mov": 4, "rng": 1 },
+		"growth": { "hp": 5, "atk": 1.6, "def": 1.1 },
+		"skills": { "3": "power_swing", "5": "ember_blade", "7": "final_strike" },
+		"palette": { "H": "#b8552e", "S": "#f0c8a0", "E": "#1a1a24", "C": "#4a6da7", "c": "#3a5288", "B": "#5a4632" },
+		"desc": "잿불마을 대장장이의 손자. 할아버지가 남긴 검을 이어받았다."
+	},
+	"sera": {
+		"name": "세라",
+		"role": "사냥꾼",
+		"base": { "hp": 22, "atk": 7, "def": 3, "mov": 4, "rng": 3 },
+		"growth": { "hp": 3.5, "atk": 1.5, "def": 0.7 },
+		"skills": { "3": "pierce_arrow", "5": "rapid_shot", "7": "hawk_eye" },
+		"palette": { "H": "#e8b84a", "S": "#f0c8a0", "E": "#1a1a24", "C": "#4a8a4a", "c": "#3a6a3a", "B": "#6a4a2a" },
+		"desc": "등대 지기의 딸. 사라진 아버지를 찾기 위해 여행에 나선다."
+	},
+	"iris": {
+		"name": "아이리",
+		"role": "약사",
+		"base": { "hp": 24, "atk": 5, "def": 4, "mov": 4, "rng": 2 },
+		"growth": { "hp": 4, "atk": 1.0, "def": 0.9 },
+		"skills": { "3": "heal_herb", "5": "guard_prayer", "7": "purify_rain" },
+		"palette": { "H": "#7a5ac8", "S": "#f0c8a0", "E": "#1a1a24", "C": "#d8d8e8", "c": "#a8a8c0", "B": "#8a6a4a" },
+		"desc": "여울마을의 젊은 약사. 골짜기의 옛 전승을 연구하고 있다."
+	},
+	"kale": {
+		"name": "카일",
+		"role": "유랑검사",
+		"base": { "hp": 26, "atk": 8, "def": 3, "mov": 6, "rng": 1 },
+		"growth": { "hp": 4, "atk": 1.5, "def": 0.8 },
+		"skills": { "3": "gale_slash", "5": "shadow_step", "7": "phantom_rush" },
+		"palette": { "H": "#2a2a34", "S": "#e0b088", "E": "#1a1a24", "C": "#8a3a3a", "c": "#6a2a2a", "B": "#3a3a44" },
+		"desc": "골짜기를 떠도는 검사. 등대 지기의 옛 제자라고 한다."
+	}
+}

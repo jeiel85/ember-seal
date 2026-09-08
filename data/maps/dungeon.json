@@ -1,0 +1,86 @@
+{
+	"id": "dungeon",
+	"name": "망자의 갱도",
+	"bgm": "dungeon",
+	"tilemap": { "#": "cliff", ".": "grass", ",": "path", "t": "tree", "f": "flowers", "g": "reeds", "w": "water", "b": "bridge", "r": "rock", "R": "roof", "W": "wall", "D": "door", "N": "window", "d": "dfloor", "x": "dwall", "c": "crack", "a": "ashen", "L": "lighthouse" },
+	"blocked": "#twrRWNDxcL",
+	"tiles": [
+		"##########################",
+		"#xxxxxxxxxxxxxxxxxxxxxxxx#",
+		"#xddddddddddddddddddddddx#",
+		"#xddxxxxxxxxxxxxxxxxxxddx#",
+		"#xddxxxxxxxxxxxxxxxxxxddx#",
+		"#xddxxxxxddddxxxxxxxxxddx#",
+		"#xddxxxxxddddxxxxxxxxxddx#",
+		"#xddxxxxxddddxxxxxxxxxddx#",
+		"#xddxxxxxddddxxxxxxxxxddx#",
+		"#xddxxxxxxddxxxxxxxxxxddx#",
+		"#xddxxxxxxddxxxxxxxxxxddx#",
+		"#xddxxxxxxddxxxxxxxxxxddx#",
+		"#xddxxxxxxddxxxxxxxxxxddx#",
+		"#xddxxxxxxddxxxxxxxxxxddx#",
+		"#xddxxxxxxddxxxxxxxxxxddx#",
+		"#xddxxxxxxddxxxxxxxxxxddx#",
+		"#xddxxxxxxddxxxxxxxxxxddx#",
+		"#xddxxxxxxddxxxxxxxxxxddx#",
+		"#xxxxxxxxxddxxxxxxxxxxxxx#",
+		"##########################"
+	],
+	"player_start": { "x": 10, "y": 17 },
+	"npcs": [],
+	"exits": [
+		{ "x": 10, "y": 18, "to": "field2", "tx": 12, "ty": 1 },
+		{ "x": 11, "y": 18, "to": "field2", "tx": 13, "ty": 1 }
+	],
+	"chests": [
+		{ "x": 2, "y": 10, "item": "w_silver_staff", "count": 1 },
+		{ "x": 23, "y": 14, "item": "hi_potion", "count": 2 }
+	],
+	"field_enemies": [
+		{ "x": 10, "y": 12, "enemy": "bat", "battle": "b_dungeon_a" },
+		{ "x": 2, "y": 12, "enemy": "bat", "battle": "b_dungeon_b" }
+	],
+	"events": [
+		{
+			"id": "enter",
+			"trigger": "auto",
+			"cond": { "stage_min": 5, "stage_max": 5 },
+			"actions": [
+				{ "type": "dialog", "speaker": "카일", "lines": [ "낡은 갱도다. 스승이 말했던 '망자'의 냄새가 나." ] },
+				{ "type": "set_objective", "text": "갱도 깊은 곳을 조사하라" }
+			]
+		},
+		{
+			"id": "midboss",
+			"trigger": "step",
+			"tiles": [[10, 8], [11, 8]],
+			"cond": { "stage_min": 5, "stage_max": 5 },
+			"actions": [
+				{ "type": "dialog", "speaker": "카일", "lines": [ "이 균열… 봉인이 아니라 '상처'군. 그것도 아주 오래된." ] },
+				{ "type": "dialog", "speaker": "???", "lines": [ "……작은 불씨들이 왔군." ] },
+				{ "type": "dialog", "speaker": "심연의 사도", "lines": [
+					"아직도 모르나? 너희 조상은 봉인한 것이 아니라, 먹이고 있었다.",
+					"백 년 동안 숯연기를 올려 '재의 군주'를 달래왔지.",
+					"이제 굶주린다. 군주께서 깨어나시면 골짜기는 통째로 재가 될 것이다."
+				] },
+				{ "type": "dialog", "speaker": "룬", "lines": [ "……뭐라고? 그럼 마을의 숯은…" ] },
+				{ "type": "battle", "battle": "b_midboss" },
+				{ "type": "dialog", "speaker": "심연의 사도", "lines": [ "허나… 늦었어. 균열은 이미 열렸다… 군주께서는… 등대로…" ] },
+				{ "type": "dialog", "speaker": "아이리", "lines": [
+					"전승대로라면 등대의 불은 봉인의 심장… 매년 숯을 태워 보낸 것은 '식사'였다는 건가.",
+					"그리고 백 년 전 봉인을 세운 이… 잿불마을의 첫 대장장이…"
+				] },
+				{ "type": "dialog", "speaker": "세라", "lines": [ "그럼 아버지는… 군주를 막으려고 등대에…!" ] },
+				{ "type": "dialog", "speaker": "카일", "lines": [ "스승은 등불을 남겼지. '순환을 끝내는 방법'을 아이리가 안다고 했어." ] },
+				{ "type": "dialog", "speaker": "아이리", "lines": [
+					"……네. 등대 꼭대기의 '인장의 화로'에 잿불검을 꽂으면, 봉인이 아니라 군주 자체를 태워 없앨 수 있어요.",
+					"단 한 번뿐인 방법이에요. 그리고… 성공할 보장도 없어요.",
+					"하지만 이 순환을 끝내지 않으면, 다음 세대도 또 숯을 태우며 살아야 해요."
+				] },
+				{ "type": "dialog", "speaker": "룬", "lines": [ "……가자. 등대로. 할아버지가 남긴 검이 이걸 기다렸던 거라면, 내가 끝낸다." ] },
+				{ "type": "set_objective", "text": "서쪽 숲길을 지나 잿불마을 북쪽 문으로 들어가라" },
+				{ "type": "set_stage", "value": 7 }
+			]
+		}
+	]
+}

@@ -1,0 +1,141 @@
+{
+	"power_swing": {
+		"name": "강타",
+		"kind": "attack",
+		"power": 1.6,
+		"range": 1,
+		"uses": -1,
+		"hits": 1,
+		"desc": "온 힘을 실어 내려벤다. 위력 160%."
+	},
+	"ember_blade": {
+		"name": "잿불일섬",
+		"kind": "attack",
+		"power": 1.8,
+		"range": 1,
+		"uses": 2,
+		"hits": 1,
+		"desc": "잿불검에 불을 붙여 벤다. 전투당 2회."
+	},
+	"final_strike": {
+		"name": "여의검격",
+		"kind": "attack",
+		"power": 2.6,
+		"range": 1,
+		"uses": 1,
+		"hits": 1,
+		"desc": "할아버지의 검격. 전투당 1회."
+	},
+	"pierce_arrow": {
+		"name": "관통 화살",
+		"kind": "attack",
+		"power": 1.5,
+		"range": 4,
+		"uses": -1,
+		"hits": 1,
+		"desc": "먼 적을 꿰뚫는 화살."
+	},
+	"rapid_shot": {
+		"name": "연사",
+		"kind": "attack",
+		"power": 0.8,
+		"range": 4,
+		"uses": 2,
+		"hits": 2,
+		"desc": "두 발을 연달아 쏜다. 전투당 2회."
+	},
+	"hawk_eye": {
+		"name": "매의 눈",
+		"kind": "attack",
+		"power": 2.4,
+		"range": 5,
+		"uses": 1,
+		"hits": 1,
+		"desc": "아버지의 저격술. 전투당 1회."
+	},
+	"heal_herb": {
+		"name": "치유의 물약",
+		"kind": "heal",
+		"power": 18,
+		"range": 2,
+		"uses": -1,
+		"hits": 1,
+		"desc": "아군 하나의 HP를 18 회복."
+	},
+	"guard_prayer": {
+		"name": "정화의 기도",
+		"kind": "heal",
+		"power": 10,
+		"range": 3,
+		"uses": 2,
+		"hits": 1,
+		"aoe": 3,
+		"desc": "주변 3칸 아군 전체를 10 회복. 전투당 2회."
+	},
+	"purify_rain": {
+		"name": "정화의 비",
+		"kind": "heal",
+		"power": 30,
+		"range": 4,
+		"uses": 1,
+		"hits": 1,
+		"aoe": 4,
+		"cure": true,
+		"desc": "아군 전체를 30 회복하고 독을 치료. 전투당 1회."
+	},
+	"gale_slash": {
+		"name": "질풍참",
+		"kind": "attack",
+		"power": 1.5,
+		"range": 1,
+		"uses": -1,
+		"hits": 1,
+		"desc": "바람처럼 빠르게 벤다."
+	},
+	"shadow_step": {
+		"name": "그림자 베기",
+		"kind": "attack",
+		"power": 1.7,
+		"range": 1,
+		"uses": 2,
+		"hits": 1,
+		"pierce_def": 0.5,
+		"desc": "방어의 틈을 벤다. 방어력 절반 무시. 전투당 2회."
+	},
+	"phantom_rush": {
+		"name": "무영연격",
+		"kind": "attack",
+		"power": 1.2,
+		"range": 1,
+		"uses": 1,
+		"hits": 3,
+		"desc": "세 번 연달아 벤다. 전투당 1회."
+	},
+	"rock_smash": {
+		"name": "바위 내리치기",
+		"kind": "attack",
+		"power": 1.5,
+		"range": 1,
+		"uses": -1,
+		"hits": 1,
+		"desc": "거대한 주먹을 내리친다."
+	},
+	"abyss_bolt": {
+		"name": "심연의 화살",
+		"kind": "attack",
+		"power": 1.5,
+		"range": 3,
+		"uses": -1,
+		"hits": 1,
+		"desc": "어둠의 마력을 쏜다."
+	},
+	"ember_wave": {
+		"name": "재의 파도",
+		"kind": "attack",
+		"power": 1.3,
+		"range": 3,
+		"uses": -1,
+		"hits": 1,
+		"desc": "잿불의 파도를 내뿜는다."
+	}
+}

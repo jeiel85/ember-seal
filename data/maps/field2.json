@@ -1,0 +1,65 @@
+{
+	"id": "field2",
+	"name": "여울 숲길",
+	"bgm": "field",
+	"tilemap": { "#": "cliff", ".": "grass", ",": "path", "t": "tree", "f": "flowers", "g": "reeds", "w": "water", "b": "bridge", "r": "rock", "R": "roof", "W": "wall", "D": "door", "N": "window", "d": "dfloor", "x": "dwall", "c": "crack", "a": "ashen", "L": "lighthouse" },
+	"blocked": "#twrRWNDxcL",
+	"tiles": [
+		"############,,############",
+		"#....t......,,....t......#",
+		"#..t.t......,,....t..t...#",
+		"#..t........,,...........#",
+		"#...........,,...........#",
+		"#......t....,,...........#",
+		"#...........,,.......t...#",
+		"#...t.......,,...........#",
+		"#...........,,....t......#",
+		"#...wwwww...,,...........#",
+		"#...wwwww...,,......g....#",
+		"#....www....,,.....gg....#",
+		"#...........,,......g....#",
+		"#..t........,,...........#",
+		"#..t........,,....t......#",
+		"#...........,,...........#",
+		"############,,############",
+		"##########################"
+	],
+	"player_start": { "x": 12, "y": 14 },
+	"npcs": [],
+	"exits": [
+		{ "x": 12, "y": 16, "to": "village2", "tx": 10, "ty": 14 },
+		{ "x": 13, "y": 16, "to": "village2", "tx": 10, "ty": 14 },
+		{ "x": 12, "y": 0, "to": "dungeon", "tx": 10, "ty": 17, "cond": { "stage_min": 5 }, "locked_lines": [ "폐광 입구. 무거운 철문이 닫혀 있다.", "마을 사람들의 허락이 필요할 것 같다." ] },
+		{ "x": 13, "y": 0, "to": "dungeon", "tx": 11, "ty": 17, "cond": { "stage_min": 5 }, "locked_lines": [ "폐광 입구. 무거운 철문이 닫혀 있다.", "마을 사람들의 허락이 필요할 것 같다." ] },
+		{ "x": 1, "y": 8, "to": "field1", "tx": 24, "ty": 8 }
+	],
+	"chests": [
+		{ "x": 22, "y": 10, "item": "lost_earring", "count": 1 }
+	],
+	"field_enemies": [
+		{ "x": 12, "y": 8, "enemy": "wolf", "battle": "b_field2a" },
+		{ "x": 5, "y": 13, "enemy": "wolf", "battle": "b_field2b" }
+	],
+	"events": [
+		{
+			"id": "moon_herb",
+			"trigger": "interact",
+			"x": 3, "y": 9,
+			"cond": { "flag": "quest_herb", "not_flag": "quest_herb_done" },
+			"actions": [
+				{ "type": "dialog", "speaker": "", "lines": [ "연못가에 은은하게 빛나는 약초가 핀다.", "달빛 약초를 채집했다!" ] },
+				{ "type": "give_item", "item": "moon_herb", "count": 1 },
+				{ "type": "set_flag", "flag": "herb_picked" }
+			]
+		},
+		{
+			"id": "moon_herb_done",
+			"trigger": "interact",
+			"x": 3, "y": 9,
+			"cond": { "flag": "herb_picked" },
+			"actions": [
+				{ "type": "dialog", "speaker": "", "lines": [ "약초를 따간 자리만 남아 있다." ] }
+			]
+		}
+	]
+}

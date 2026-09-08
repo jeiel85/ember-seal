@@ -1,0 +1,127 @@
+{
+	"w_old_sword": {
+		"name": "낡은 검",
+		"slot": "weapon",
+		"atk": 2,
+		"price": 30,
+		"icon": "sword",
+		"desc": "대장간의 검숙 검. 그래도 아직 쓸 만하다."
+	},
+	"w_ember_sword": {
+		"name": "잿불검",
+		"slot": "weapon",
+		"atk": 4,
+		"price": 0,
+		"icon": "sword",
+		"desc": "룬의 할아버지가 남긴 검. 칼날에 잿불이 스며 있다."
+	},
+	"w_hunter_bow": {
+		"name": "사냥 활",
+		"slot": "weapon",
+		"atk": 3,
+		"price": 40,
+		"icon": "bow",
+		"desc": "세라의 아버지가 만든 활."
+	},
+	"w_hawk_bow": {
+		"name": "매의 활",
+		"slot": "weapon",
+		"atk": 5,
+		"price": 150,
+		"icon": "bow",
+		"desc": "매의 깃으로 장식된 강궁."
+	},
+	"w_heal_staff": {
+		"name": "약사 지팡이",
+		"slot": "weapon",
+		"atk": 1,
+		"heal": 4,
+		"price": 30,
+		"icon": "staff",
+		"desc": "약초의 기운이 담긴 지팡이. 회복 효과 +4."
+	},
+	"w_silver_staff": {
+		"name": "은빛 지팡이",
+		"slot": "weapon",
+		"atk": 3,
+		"heal": 8,
+		"price": 0,
+		"icon": "staff",
+		"desc": "갱도 깊은 곳에 잠들어 있던 지팡이. 회복 효과 +8."
+	},
+	"w_wander_blade": {
+		"name": "유랑도",
+		"slot": "weapon",
+		"atk": 3,
+		"price": 40,
+		"icon": "blade",
+		"desc": "카일이 곳곳을 떠돌며 쓴 검."
+	},
+	"w_gale_blade": {
+		"name": "질풍도",
+		"slot": "weapon",
+		"atk": 5,
+		"price": 0,
+		"icon": "blade",
+		"desc": "바람을 가르는 얇은 검."
+	},
+	"a_travel_clothes": {
+		"name": "여행자 옷",
+		"slot": "armor",
+		"def": 1,
+		"hp": 2,
+		"price": 20,
+		"icon": "armor",
+		"desc": "편하지만 허술하다."
+	},
+	"a_leather_vest": {
+		"name": "가죽 조끼",
+		"slot": "armor",
+		"def": 3,
+		"price": 80,
+		"icon": "armor",
+		"desc": "두꺼운 가죽으로 방어력 +3."
+	},
+	"a_chain_mail": {
+		"name": "사슬 조끼",
+		"slot": "armor",
+		"def": 5,
+		"hp": 5,
+		"price": 200,
+		"icon": "armor",
+		"desc": "사슬을 엮은 조끼. 방어력 +5, HP +5."
+	},
+	"a_ash_mantle": {
+		"name": "잿불 망토",
+		"slot": "armor",
+		"def": 7,
+		"hp": 10,
+		"price": 0,
+		"icon": "armor",
+		"desc": "불꽃을 막는 오래된 망토. 방어력 +7, HP +10."
+	},
+	"t_power_ring": {
+		"name": "힘의 반지",
+		"slot": "trinket",
+		"atk": 2,
+		"price": 0,
+		"icon": "ring",
+		"desc": "공격력 +2."
+	},
+	"t_guard_amulet": {
+		"name": "수호 부적",
+		"slot": "trinket",
+		"def": 3,
+		"price": 0,
+		"icon": "charm",
+		"desc": "방어력 +3."
+	},
+	"t_swift_boots": {
+		"name": "질풍 장화",
+		"slot": "trinket",
+		"mov": 2,
+		"price": 0,
+		"icon": "ring",
+		"desc": "이동력 +2."
+	}
+}

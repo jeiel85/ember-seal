@@ -1,0 +1,28 @@
+{
+	"id": "b_field1a",
+	"name": "벌판의 재식물",
+	"bgm": "battle",
+	"tilemap": { ".": "grass", "t": "tree", "f": "flowers", "g": "reeds", "r": "rock", "w": "water", "d": "dfloor", "x": "dwall", "a": "ashen", "c": "crack", "s": "sand" },
+	"blocked": "trwx c",
+	"tiles": [
+		"############",
+		"#..........#",
+		"#..t.....t.#",
+		"#..........#",
+		"#....f.....#",
+		"#..........#",
+		"#..t.....t.#",
+		"#..........#",
+		"#....g.....#",
+		"############"
+	],
+	"player_spawns": [[2, 4], [3, 5], [2, 5], [3, 4]],
+	"enemies": [
+		{ "enemy": "sprout", "x": 9, "y": 3 },
+		{ "enemy": "sprout", "x": 9, "y": 6 }
+	],
+	"objective": "defeat_all",
+	"intro": { "speaker": "", "lines": [] },
+	"outro": { "speaker": "", "lines": [] },
+	"on_win": []
+}

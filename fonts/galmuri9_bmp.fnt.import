@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://kc2groy68ljk"
+path="res://.godot/imported/galmuri9_bmp.fnt-15182e89077cf97e9f502877159556c5.fontdata"
+
+[deps]
+
+source_file="res://fonts/galmuri9_bmp.fnt"
+dest_files=["res://.godot/imported/galmuri9_bmp.fnt-15182e89077cf97e9f502877159556c5.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2
