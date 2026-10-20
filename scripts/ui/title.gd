@@ -61,14 +61,6 @@ func _build() -> void:
 	deco.add_child(flame_core)
 	_flame_core = flame_core
 
-func _process(delta: float) -> void:
-	_t += delta
-	if _flame != null:
-		var s := 1.0 + sin(_t * 5.0) * 0.18
-		_flame.scale = Vector2(s, s)
-		_flame.position = Vector2(532, 154) - Vector2(8, 8) * s
-		_flame_core.position = Vector2(533, 157) - Vector2(3, 3) * s
-
 	# 타이틀
 	var title := UIKit.label("잿불의 인장", 32, Color("ffc857"))
 	title.add_theme_color_override("font_outline_color", Color("3a1a08"))
@@ -103,6 +95,14 @@ func _process(delta: float) -> void:
 	var ver := UIKit.label("v1.0 · Godot 4", 9, Color(1, 1, 1, 0.35))
 	ver.position = Vector2(8, 342)
 	add_child(ver)
+
+func _process(delta: float) -> void:
+	_t += delta
+	if _flame != null:
+		var s := 1.0 + sin(_t * 5.0) * 0.18
+		_flame.scale = Vector2(s, s)
+		_flame.position = Vector2(532, 154) - Vector2(8, 8) * s
+		_flame_core.position = Vector2(533, 157) - Vector2(3, 3) * s
 
 func _refresh() -> void:
 	for i in _labels.size():
