@@ -1,6 +1,8 @@
 extends Node2D
 ## 타이틀 화면 — 새 게임 / 이어하기 / 종료.
 
+const REPO_URL := "https://github.com/jeiel85/ember-seal"
+
 var _options: Array = []
 var _sel := 0
 var _labels: Array = []
@@ -95,6 +97,21 @@ func _build() -> void:
 	var ver := UIKit.label("v1.0 · Godot 4", 9, Color(1, 1, 1, 0.35))
 	ver.position = Vector2(8, 342)
 	add_child(ver)
+
+	# 저장소 링크(마우스 클릭 전용, 키보드 메뉴 포커스에는 끼어들지 않음)
+	var repo := LinkButton.new()
+	repo.text = "GitHub"
+	repo.uri = REPO_URL
+	repo.tooltip_text = "GitHub 저장소 열기"
+	repo.focus_mode = Control.FOCUS_NONE
+	repo.underline = LinkButton.UNDERLINE_MODE_ON_HOVER
+	repo.add_theme_font_override("font", load(UIKit.FONT_SMALL))
+	repo.add_theme_font_size_override("font_size", 9)
+	repo.add_theme_color_override("font_color", Color(1, 1, 1, 0.45))
+	repo.add_theme_color_override("font_hover_color", UIKit.COL_ACCENT)
+	repo.add_theme_color_override("font_pressed_color", UIKit.COL_ACCENT)
+	add_child(repo)
+	repo.position = Vector2(640 - 8 - repo.get_combined_minimum_size().x, 340)
 
 func _process(delta: float) -> void:
 	_t += delta
